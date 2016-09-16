@@ -1,0 +1,54 @@
+<br>
+
+<div class="ui right aligned segment">
+  <!--<div class="ui cards">-->
+    <!--<app-dashboard [timeout]="5"></app-dashboard>-->
+    <!--<app-dashboard [timeout]="8"></app-dashboard>-->
+    <!--<app-dashboard [timeout]="6"></app-dashboard>-->
+    <!--<app-dashboard [timeout]="2"></app-dashboard>-->
+    <!--<app-dashboard [timeout]="4"></app-dashboard>-->
+  <!--</div>-->
+  <div class="ui cards" *ngFor="let item of data">
+    <div class="card" *ngIf="item.result == 0">
+      <div class="content">
+        <img class="right floated mini ui image" src="../../image/logo.png">
+        <div class="header" style="font-size: 15px;text-align: justify">
+          {{item.title}}
+        </div>
+        <div class="description">
+          Hiện chưa có kết quả cho tỉnh/thành này
+        </div>
+      </div>
+    </div>
+    <div class="card ten wide" *ngFor="let itemResult of item.result">
+      <div class="content">
+        <img class="right floated mini ui image" src="../../image/logo.png">
+        <div class="header" style="font-size: 15px;text-align: justify">
+          {{item.title}}
+          <p>{{itemResult.district}}</p>
+        </div>
+        <div class="description">
+          <table class="ui green table">
+            <thead>
+            <tr>
+              <th class="four wide ui center aligned">Giải</th>
+              <th class="six wide ui center aligned">Kết Quả</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let result of itemResult.result; let i= index">
+              <td *ngIf="i==8" class="error">
+                Đặc Biệt
+              </td>
+              <td *ngIf="i>=0 && i!=8" class="error">
+                Giải {{8-i}}
+              </td>
+              <td class="ui center aligned">{{result}}</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

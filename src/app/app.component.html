@@ -1,3 +1,15 @@
-<h1>
-  {{title}}
-</h1>
+<!--<a href="#" class="scrollToTop" #scrollTop (click)="scrollToTop()"></a>-->
+
+<app-header></app-header>
+<div class="ui grid">
+  <div class="twelve wide column">
+    <router-outlet></router-outlet>
+  </div>
+  <div class="four wide column">
+    <h2 class="ui center aligned header" style="font-family: myfont;font-size: 30px">
+      Quảng cáo
+    </h2>
+    <app-advertisement></app-advertisement>
+  </div>
+</div>
+

@@ -1,0 +1,160 @@
+<div class="ui inverted segment">
+  <div class="ui inverted secondary pointing menu">
+    <a class="item" (click)="toogleSidebar()">
+      <i class="sidebar icon"></i>
+    </a>
+    <a class="item" routerLinkActive="active" [routerLink]="['']" style="font-family: myfont;font-size: 25px">
+      Trang chủ
+    </a>
+    <a class="item" routerLinkActive="active" style="font-family: myfont;font-size: 25px">
+      Xổ sổ trực tiếp
+    </a>
+    <a class="item" routerLinkActive="active" style="font-family: myfont;font-size: 25px">
+      Thống kê
+    </a>
+    <a class="item" routerLinkActive="active" style="font-family: myfont;font-size: 25px">
+      Sổ kết quả
+    </a>
+  </div>
+</div>
+
+
+<div class="ui sidebar inverted vertical menu uncover visible" #sidebar>
+  <div class="item">
+    <div class="header">
+      XỔ SỐ HÔM NAY
+    </div>
+    <div class="item">
+      <a class="item" [routerLink]="['mien-bac-xsmb']">
+        Xổ số Miền Bắc
+      </a>
+      <a class="item" [routerLink]="['mien-nam-xsmn']">
+        Xổ số Miền Nam
+      </a>
+      <a class="item" [routerLink]="['mien-trung-xsmt']">
+        Xổ số Miền Trung
+      </a>
+    </div>
+  </div>
+  <div class="item">
+    <div class="header">
+      XỔ SỐ MIỀN NAM
+    </div>
+    <div class="item">
+      <a class="item" [routerLink]="['tp-hcm-xshcm']" routerLinkActive="active">
+        TP.HCM
+      </a>
+      <a class="item" [routerLink]="['an-giang-xsag']" routerLinkActive="active">
+        An Giang
+      </a>
+      <a class="item" [routerLink]="['binh-duong-xsbd']" routerLinkActive="active">
+        Bình Dương
+      </a>
+      <a class="item" [routerLink]="['bac-lieu-xsbl']" routerLinkActive="active">
+        Bạc Liêu
+      </a>
+      <a class="item" [routerLink]="['binh-phuoc-xsbp']" routerLinkActive="active">
+        Bình Phước
+      </a>
+      <a class="item" [routerLink]="['ben-tre-xsbt']" routerLinkActive="active">
+        Bến Tre
+      </a>
+      <a class="item" [routerLink]="['binh-thuan-xsbth']" routerLinkActive="active">
+        Bình Thuận
+      </a>
+      <a class="item" [routerLink]="['ca-mau-xscm']" routerLinkActive="active">
+        Cà Mau
+      </a>
+      <a class="item" [routerLink]="['can-tho-xsct']" routerLinkActive="active">
+        Cần Thơ
+      </a>
+      <a class="item" [routerLink]="['lam-dong-xsld']" routerLinkActive="active">
+        Lâm Đồng
+      </a>
+      <a class="item" [routerLink]="['dong-nai-xsdn']" routerLinkActive="active">
+        Đồng Nai
+      </a>
+      <a class="item" [routerLink]="['dong-thap-xsdt']" routerLinkActive="active">
+        Đồng Tháp
+      </a>
+      <a class="item" [routerLink]="['hau-giang-xshg']" routerLinkActive="active">
+        Hậu Giang
+      </a>
+      <a class="item" [routerLink]="['kien-giang-xskg']" routerLinkActive="active">
+        Kiên Giang
+      </a>
+      <a class="item" [routerLink]="['long-an-xsla']" routerLinkActive="active">
+        Long An
+      </a>
+      <a class="item" [routerLink]="['soc-trang-xsst']" routerLinkActive="active">
+        Sóc Trăng
+      </a>
+      <a class="item" [routerLink]="['tien-giang-xstg']" routerLinkActive="active">
+        Tiền Giang
+      </a>
+      <a class="item" [routerLink]="['tay-ninh-xstn']" routerLinkActive="active">
+        Tây Ninh
+      </a>
+      <a class="item" [routerLink]="['tra-vinh-xstv']" routerLinkActive="active">
+        Trà Vinh
+      </a>
+      <a class="item" [routerLink]="['vinh-long-xsvl']" routerLinkActive="active">
+        Vĩnh Long
+      </a>
+      <a class="item" [routerLink]="['vung-tau-xsvt']" routerLinkActive="active">
+        Vũng Tàu
+      </a>
+
+    </div>
+  </div>
+  <div class="item">
+    <div class="header">
+      XỔ SỐ MIỀN TRUNG
+    </div>
+    <div class="item">
+      <a class="item" [routerLink]="['binh-dinh-xsbdi']" routerLinkActive="active">
+        Bình Định
+      </a>
+      <a class="item" [routerLink]="['dac-lac-xsdlk']" routerLinkActive="active">
+        Đắk Lắk
+      </a>
+      <a class="item" [routerLink]="['da-nang-xsdng']" routerLinkActive="active">
+        Đà Nẵng
+      </a>
+      <a class="item" [routerLink]="['dac-nong-xsdno']" routerLinkActive="active">
+        Đắk Nông
+      </a>
+      <a class="item" [routerLink]="['gia-lai-xsgl']" routerLinkActive="active">
+        Gia Lai
+      </a>
+      <a class="item" [routerLink]="['khanh-hoa-xskh']" routerLinkActive="active">
+        Khánh Hòa
+      </a>
+      <a class="item" [routerLink]="['kon-tum-xskt']" routerLinkActive="active">
+        Kon Tum
+      </a>
+      <a class="item" [routerLink]="['ninh-thuan-xsnt']" routerLinkActive="active">
+        Ninh Thuận
+      </a>
+      <a class="item" [routerLink]="['phu-yen-xspy']" routerLinkActive="active">
+        Phú Yên
+      </a>
+      <a class="item" [routerLink]="['quang-binh-xsqb  ']" routerLinkActive="active">
+        Quảng Bình
+      </a>
+      <a class="item" [routerLink]="['quang-ngai-xsqng']" routerLinkActive="active">
+        Quảng Ngãi
+      </a>
+      <a class="item" [routerLink]="['quang-nam-xsqnm']" routerLinkActive="active">
+        Quảng Nam
+      </a>
+      <a class="item" [routerLink]="['quang-tri-xsqt']" routerLinkActive="active">
+        Quảng Trị
+      </a>
+      <a class="item" [routerLink]="['thua-thien-hue-xstth']" routerLinkActive="active">
+        Thưa Thiên Huế
+      </a>
+    </div>
+  </div>
+</div>
+

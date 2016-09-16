@@ -1,14 +1,15 @@
 import {Injectable} from '@angular/core';
-import {Http} from '@angular/http'
+import {Http, Headers} from '@angular/http'
 import 'rxjs/Rx'
 @Injectable()
 export class LotteryService {
 
   constructor(private http: Http) {
+
   }
 
-  getListLottery() {
-    this.http.get('http://xskt.com.vn/rss-feed/mien-nam-xsmn.rss').map(data => console.log(data));
+  getListLottery(category: string) {
+    return this.http.get('http://localhost:8021/api/Values/getResult/' + category).map(data =>data.json());
   }
 
 }
